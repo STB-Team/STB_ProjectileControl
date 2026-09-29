@@ -1,0 +1,127 @@
+$STB_PC_Hint_Cancel	Отпустить
+$STB_PC_Hint_Steer	Управление
+$STB_PC_Hint_Mouse	Мышью
+$STB_PC_Hint_Time	Время
+$STB_PC_NoStamina	Не хватает запаса сил, чтобы вести снаряд
+$STB_PC_NoMagicka	Не хватает магии, чтобы вести снаряд
+$STB_PC_NoHealth	Не хватает здоровья, чтобы вести снаряд
+$STB_PC_M_PageControls	Управление
+$STB_PC_M_PageProjectiles	Снаряды
+$STB_PC_M_PageCamera	Камера
+$STB_PC_M_PageSteering	Полёт
+$STB_PC_M_PageImpact	Попадание и время
+$STB_PC_M_PageCost	Стоимость
+$STB_PC_M_PageGeneral	Общее
+$STB_PC_M_UnitSec	с
+$STB_PC_M_UnitDegSec	°/с
+$STB_PC_M_PressButton	нажмите кнопку... (Esc - отмена)
+$STB_PC_M_PressKey	нажмите клавишу... (Esc - отмена)
+$STB_PC_M_NotSet	не назначено
+$STB_PC_M_Clear	Очистить
+$STB_PC_M_PoolNone	Нет
+$STB_PC_M_PoolStamina	Запас сил
+$STB_PC_M_PoolMagicka	Магия
+$STB_PC_M_PoolHealth	Здоровье
+$STB_PC_M_Search	поиск по названию или плагину
+$STB_PC_M_More	... и ещё, уточните поиск
+$STB_PC_M_NothingLoaded	ничего такого не загружено
+$STB_PC_M_NothingMatches	ничего не найдено
+$STB_PC_M_Keys	Клавиши
+$STB_PC_M_Trigger	Запуск
+$STB_PC_M_TriggerHelp	Зажмите в момент выстрела или броска заклинания, чтобы полететь вместе со снарядом.
+$STB_PC_M_TriggerPad	Запуск (геймпад)
+$STB_PC_M_LetGo	Отпустить
+$STB_PC_M_LetGoHelp	Сразу завершает полёт, снаряд летит дальше сам.\nМожет совпадать с клавишей запуска.
+$STB_PC_M_LetGoPad	Отпустить (геймпад)
+$STB_PC_M_InvertY	Инвертировать вверх / вниз
+$STB_PC_M_InvertYHelp	Выкл.: W поднимает нос, S опускает - «вперёд» значит вверх по экрану.\nВкл.: W пикирует, S набирает высоту, как ручка самолёта.
+$STB_PC_M_Hints	Подсказки клавиш
+$STB_PC_M_ShowHint	Показывать подсказки в полёте
+$STB_PC_M_HintSteer	Показывать клавиши управления
+$STB_PC_M_KeycapSize	Размер клавиш
+$STB_PC_M_LabelSize	Размер текста
+$STB_PC_M_HintBottom	Отступ снизу
+$STB_PC_M_TriggerTakes	Что можно взять клавишей
+$STB_PC_M_Arrows	Стрелы
+$STB_PC_M_Bolts	Арбалетные болты
+$STB_PC_M_Spells	Заклинания
+$STB_PC_M_SpellsHelp	Летящие заклинания мгновенного действия - из рук, посохов и свитков.\nУ заклинаний концентрации и конусных криков нечем управлять.
+$STB_PC_M_Always	Всегда в полёт, без клавиши
+$STB_PC_M_AlwaysHelp	Выстрелы из списка сами запускают полёт, без клавиши -\nдаже если их тип выключен выше. Перки и стоимость действуют.
+$STB_PC_M_KindSpells	Заклинания и свитки
+$STB_PC_M_KindStaves	Посохи
+$STB_PC_M_KindAmmo	Боеприпасы
+$STB_PC_M_KindWeapons	Луки и арбалеты
+$STB_PC_M_AddFromList	Добавить из списка...
+$STB_PC_M_AlwaysEmpty	Пусто - полёт запускается только клавишей.
+$STB_PC_M_Remove	Убрать
+$STB_PC_M_TypeHint	или введите Plugin.esp|0xFormID / editor id
+$STB_PC_M_Add	Добавить
+$STB_PC_M_Perks	Необходимые перки
+$STB_PC_M_NoPerk	перк не нужен
+$STB_PC_M_Found	найден
+$STB_PC_M_NotFound	не найден
+$STB_PC_M_PickPerk	Выбрать перк из списка...
+$STB_PC_M_ArrowsAndBolts	Стрелы и болты
+$STB_PC_M_Position	Положение
+$STB_PC_M_Distance	Дистанция позади
+$STB_PC_M_Height	Высота над снарядом
+$STB_PC_M_Follow	Слежение
+$STB_PC_M_FollowLag	Запаздывание
+$STB_PC_M_FollowLagHelp	Насколько камера отстаёт от снаряда в повороте.\n0 - жёстко за спиной.
+$STB_PC_M_Bank	Крен в поворотах
+$STB_PC_M_BankHelp	Отрицательное значение - крен в другую сторону. 0 - горизонт ровный.
+$STB_PC_M_BankLag	Запаздывание крена
+$STB_PC_M_Mouse	Мышь
+$STB_PC_M_MouseLook	Обзор (мышь / правый стик)
+$STB_PC_M_Sensitivity	Чувствительность
+$STB_PC_M_InvertMouse	Инвертировать мышь по вертикали
+$STB_PC_M_TiltLimit	Предел наклона
+$STB_PC_M_DriftBack	Возврат камеры
+$STB_PC_M_DriftBackHelp	Как быстро камера сама возвращается за снаряд. 0 - остаётся, где поставили.
+$STB_PC_M_DriftDelay	Возврат через
+$STB_PC_M_TurnRate	Скорость поворота
+$STB_PC_M_TurnRateHelp	В реальных секундах - не зависит от замедления.
+$STB_PC_M_TurnResponse	Отклик поворота
+$STB_PC_M_TurnResponseHelp	Как быстро поворот набирается и затухает. Около 6 - плавные дуги;\n0 - полная скорость сразу по нажатию.
+$STB_PC_M_PitchLimit	Предел наклона снаряда
+$STB_PC_M_Gravity	Гравитация
+$STB_PC_M_GravityHelp	0 - снаряд держит заданную линию, 1 - падает как обычно.
+$STB_PC_M_Speed	Скорость
+$STB_PC_M_SpeedHelp	Множитель скорости снаряда в начале полёта.
+$STB_PC_M_SlowMo	Замедление
+$STB_PC_M_WorldTime	Время мира
+$STB_PC_M_PlayerTime	Время игрока
+$STB_PC_M_VanillaHelp	Используется собственное замедление игры - то же, что у крика «Замедление времени».\nУже действующий крик не ослабляется и продолжается после полёта.
+$STB_PC_M_AfterHit	После попадания
+$STB_PC_M_Linger	Задержка на попадании
+$STB_PC_M_LingerHelp	Сколько реальных секунд камера остаётся после попадания. 0 - сразу назад.
+$STB_PC_M_EaseBack	Плавно возвращать нормальное время
+$STB_PC_M_PaidFrom	Ресурс
+$STB_PC_M_AtStart	При запуске
+$STB_PC_M_PerSecond	В секунду
+$STB_PC_M_PerSecondHelp	В реальных секундах, пока ведёте снаряд; не во время паузы после попадания.
+$STB_PC_M_RefuseShort	Не давать или прерывать полёт при нехватке
+$STB_PC_M_RefuseShortHelp	Выкл.: полёт всегда состоится, ресурс просто опустится до нуля.\nЗдоровье в любом случае не опускается ниже 1.
+$STB_PC_M_Timeout	Аварийный таймаут
+$STB_PC_M_TimeoutHelp	Через это время полёт завершается в любом случае. Это не игровой таймер.
+$STB_PC_M_DebugLog	Отладочный лог
+$STB_PC_M_DebugLogHelp	Записывает каждый полёт в STB_ProjectileControl.log.
+$STB_PC_M_Reset	Сбросить всё к значениям по умолчанию
+$STB_PC_M_PressKeyOrMouse	нажмите клавишу или кнопку мыши... (Esc - отмена)
+$STB_PC_M_MouseSteer	Управление мышью
+$STB_PC_M_MouseSteerHelp	Пока зажата, мышь ведёт снаряд, а не поворачивает камеру.\nПо умолчанию левая кнопка мыши: атака во время полёта всё равно отключена.
+$STB_PC_M_Slower	Замедлить время
+$STB_PC_M_Faster	Ускорить время
+$STB_PC_M_TimeKeysHelp	Один шаг замедления на нажатие во время полёта. Новое значение сохраняется,\nкак если бы его выставили на странице «Попадание и время». Num - и Num + тоже работают.
+$STB_PC_M_DistanceHelp	Меньше 0 - камера оказывается впереди снаряда.
+$STB_PC_M_Loops	Мёртвые петли
+$STB_PC_M_LoopsHelp	Держите W - и снаряд уходит через верх в полную петлю,\nкамера переворачивается вместе с ним. Выкл.: нос упирается в предел наклона.
+$STB_PC_M_MouseSteerSens	Чувствительность мыши при управлении
+$STB_PC_M_MouseSteerSensHelp	Градусов поворота на единицу движения мыши, пока мышь ведёт снаряд.\n«Инвертировать мышь по вертикали» со страницы «Камера» действует и здесь.
+$STB_PC_M_Range	Дальность
+$STB_PC_M_MaxDistance	Предел дальности
+$STB_PC_M_MaxDistanceHelp	В игровых единицах от точки выстрела; дальше камера возвращается. 0 - без предела.\nСнаряд, вылетевший из прогруженной части мира, завершает полёт в любом случае.
+$STB_PC_M_Safety	Безопасность
+$STB_PC_M_Life	Жизнь снаряда
+$STB_PC_M_LifeHelp	Во сколько раз дальше снаряд может пролететь, прежде чем исчезнет, пока вы им управляете.\n1 - как в игре, 0 - не исчезает никогда. Отпустили - всё как обычно.

@@ -1,0 +1,127 @@
+$STB_PC_Hint_Cancel	Let go
+$STB_PC_Hint_Steer	Steer
+$STB_PC_Hint_Mouse	Steer with the mouse
+$STB_PC_Hint_Time	Time
+$STB_PC_NoStamina	Not enough stamina to guide the shot
+$STB_PC_NoMagicka	Not enough magicka to guide the shot
+$STB_PC_NoHealth	Not enough health to guide the shot
+$STB_PC_M_PageControls	Controls
+$STB_PC_M_PageProjectiles	Projectiles
+$STB_PC_M_PageCamera	Camera
+$STB_PC_M_PageSteering	Steering
+$STB_PC_M_PageImpact	Impact & time
+$STB_PC_M_PageCost	Cost
+$STB_PC_M_PageGeneral	General
+$STB_PC_M_UnitSec	s
+$STB_PC_M_UnitDegSec	°/s
+$STB_PC_M_PressButton	press a button... (Esc cancels)
+$STB_PC_M_PressKey	press a key... (Esc cancels)
+$STB_PC_M_NotSet	not set
+$STB_PC_M_Clear	Clear
+$STB_PC_M_PoolNone	None
+$STB_PC_M_PoolStamina	Stamina
+$STB_PC_M_PoolMagicka	Magicka
+$STB_PC_M_PoolHealth	Health
+$STB_PC_M_Search	search by name or plugin
+$STB_PC_M_More	... more, type to narrow the search
+$STB_PC_M_NothingLoaded	nothing of this kind is loaded
+$STB_PC_M_NothingMatches	nothing matches
+$STB_PC_M_Keys	Keys
+$STB_PC_M_Trigger	Trigger
+$STB_PC_M_TriggerHelp	Hold it as the arrow or spell leaves your hand to ride it.
+$STB_PC_M_TriggerPad	Trigger (gamepad)
+$STB_PC_M_LetGo	Let go
+$STB_PC_M_LetGoHelp	Ends the ride at once; the projectile flies on by itself.\nMay be the same key as the trigger.
+$STB_PC_M_LetGoPad	Let go (gamepad)
+$STB_PC_M_InvertY	Invert up / down
+$STB_PC_M_InvertYHelp	Off: W lifts the nose and S lowers it -- forward reads as up the screen.\nOn: W dives and S climbs, the way an aircraft stick works.
+$STB_PC_M_Hints	Button hints
+$STB_PC_M_ShowHint	Show the hint row while flying
+$STB_PC_M_HintSteer	Include the steering keys
+$STB_PC_M_KeycapSize	Keycap size
+$STB_PC_M_LabelSize	Label size
+$STB_PC_M_HintBottom	Distance from bottom
+$STB_PC_M_TriggerTakes	What the trigger can take
+$STB_PC_M_Arrows	Arrows
+$STB_PC_M_Bolts	Crossbow bolts
+$STB_PC_M_Spells	Spells
+$STB_PC_M_SpellsHelp	Fire-and-forget spells that fly, from hands, staves and scrolls.\nConcentration spells and cone shouts have nothing to steer.
+$STB_PC_M_Always	Always ride, no key needed
+$STB_PC_M_AlwaysHelp	Listed shots start a ride by themselves, without the trigger key --\neven if their kind is switched off above. Perks and costs still apply.
+$STB_PC_M_KindSpells	Spells and scrolls
+$STB_PC_M_KindStaves	Staves
+$STB_PC_M_KindAmmo	Ammo
+$STB_PC_M_KindWeapons	Bows and crossbows
+$STB_PC_M_AddFromList	Add from the list...
+$STB_PC_M_AlwaysEmpty	Empty -- only the trigger key starts a ride.
+$STB_PC_M_Remove	Remove
+$STB_PC_M_TypeHint	or type Plugin.esp|0xFormID / an editor id
+$STB_PC_M_Add	Add
+$STB_PC_M_Perks	Required perks
+$STB_PC_M_NoPerk	no perk needed
+$STB_PC_M_Found	found
+$STB_PC_M_NotFound	not found
+$STB_PC_M_PickPerk	Pick a perk from the list...
+$STB_PC_M_ArrowsAndBolts	Arrows and bolts
+$STB_PC_M_Position	Position
+$STB_PC_M_Distance	Distance behind
+$STB_PC_M_Height	Height above
+$STB_PC_M_Follow	Follow
+$STB_PC_M_FollowLag	Follow lag
+$STB_PC_M_FollowLagHelp	How long the view trails the projectile through a turn.\n0 locks it rigidly behind.
+$STB_PC_M_Bank	Bank into turns
+$STB_PC_M_BankHelp	Negative leans the other way. 0 keeps the horizon level.
+$STB_PC_M_BankLag	Bank lag
+$STB_PC_M_Mouse	Mouse
+$STB_PC_M_MouseLook	Look around (mouse / right stick)
+$STB_PC_M_Sensitivity	Sensitivity
+$STB_PC_M_InvertMouse	Invert mouse Y
+$STB_PC_M_TiltLimit	Tilt limit
+$STB_PC_M_DriftBack	Drift back
+$STB_PC_M_DriftBackHelp	How fast the view drifts back behind the projectile. 0 = stays where you put it.
+$STB_PC_M_DriftDelay	Drift back after
+$STB_PC_M_TurnRate	Turn rate
+$STB_PC_M_TurnRateHelp	In real seconds, so it does not change with the slow motion.
+$STB_PC_M_TurnResponse	Turn response
+$STB_PC_M_TurnResponseHelp	How quickly a turn builds up and dies away. Around 6 flies smooth arcs;\n0 switches the full rate on and off with the key.
+$STB_PC_M_PitchLimit	Pitch limit
+$STB_PC_M_Gravity	Gravity
+$STB_PC_M_GravityHelp	0 = the projectile holds the line you put it on, 1 = it drops as usual.
+$STB_PC_M_Speed	Speed
+$STB_PC_M_SpeedHelp	Multiplies the projectile's speed when the ride starts.
+$STB_PC_M_SlowMo	Slow motion
+$STB_PC_M_WorldTime	World time
+$STB_PC_M_PlayerTime	Player time
+$STB_PC_M_VanillaHelp	Uses the game's own magic slowdown, the one Slow Time uses.\nA Slow Time already running is never made weaker, and is handed back after the ride.
+$STB_PC_M_AfterHit	After the hit
+$STB_PC_M_Linger	Stay on the hit
+$STB_PC_M_LingerHelp	Real seconds the camera stays after the projectile lands. 0 cuts back at once.
+$STB_PC_M_EaseBack	Ease time back to normal meanwhile
+$STB_PC_M_PaidFrom	Paid from
+$STB_PC_M_AtStart	At the start
+$STB_PC_M_PerSecond	Per second
+$STB_PC_M_PerSecondHelp	Real seconds while steering, not during the pause after the hit.
+$STB_PC_M_RefuseShort	Refuse or end the ride when short
+$STB_PC_M_RefuseShortHelp	Off: the ride always happens and just drains the pool to zero.\nHealth never goes below 1 either way.
+$STB_PC_M_Timeout	Safety timeout
+$STB_PC_M_TimeoutHelp	A ride is torn down after this long no matter what. Not a gameplay timer.
+$STB_PC_M_DebugLog	Debug log
+$STB_PC_M_DebugLogHelp	Writes every ride to STB_ProjectileControl.log.
+$STB_PC_M_Reset	Reset everything to defaults
+$STB_PC_M_PressKeyOrMouse	press a key or mouse button... (Esc cancels)
+$STB_PC_M_MouseSteer	Steer with the mouse
+$STB_PC_M_MouseSteerHelp	Hold it and the mouse flies the projectile instead of turning the camera.\nLeft mouse button by default: attacking is off for the length of the ride.
+$STB_PC_M_Slower	Slower time
+$STB_PC_M_Faster	Faster time
+$STB_PC_M_TimeKeysHelp	One step of slow motion per press while you fly. The new value is kept,\nthe same as setting it on the Impact & time page. Num - and Num + work as well.
+$STB_PC_M_DistanceHelp	Below 0 the camera moves ahead of the projectile.
+$STB_PC_M_Loops	Allow loops
+$STB_PC_M_LoopsHelp	Keep holding W and the projectile goes over the top into a full loop,\nthe camera turning upside down with it. Off: the nose stops at the pitch limit.
+$STB_PC_M_MouseSteerSens	Mouse steering sensitivity
+$STB_PC_M_MouseSteerSensHelp	Degrees of turn per unit of mouse movement while the mouse steers.\nInvert mouse Y on the Camera page applies here too.
+$STB_PC_M_Range	Range
+$STB_PC_M_MaxDistance	Range cap
+$STB_PC_M_MaxDistanceHelp	Game units from where the shot was fired; the camera hands back past it. 0 = no cap.\nA shot leaving the loaded part of the world ends the ride anyway.
+$STB_PC_M_Safety	Safety
+$STB_PC_M_Life	Projectile life
+$STB_PC_M_LifeHelp	Multiplies how far the projectile may fly before it runs out, while you steer it.\n1 = as the game has it, 0 = it never runs out. Let go and it is back to normal.

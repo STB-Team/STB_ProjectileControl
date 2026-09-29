@@ -1,0 +1,10 @@
+{
+  "name": "stb-projectile-control",
+  "version-string": "1.0.0",
+  "description": "SKSE plugin: ride your own arrow -- camera behind it, time slowed, WASD steering",
+  "license": "GPL-3.0-only",
+  "dependencies": [
+    "spdlog"
+  ],
+  "builtin-baseline": "ffffe619563988cbcfda2b8db2c142654d12eaf5"
+}

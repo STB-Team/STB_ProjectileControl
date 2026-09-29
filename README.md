@@ -92,8 +92,10 @@ every build (`STB_PROJECTILECONTROL_DEPLOY_DIR`).
 
 ## Credits
 
-The projectile-steering
-approach — bending `linearVelocity` and letting the engine integrate — is the same one
-NewProjectiles uses for homing.
+- [JerryYOJ](https://github.com/JerryYOJ/Dynamic-Inventory-Icon-Injector-SKSE) for
+  Dynamic Inventory Icon Injector: the runtime SWF import code in `src/swfhelper/`
+  (GPL-3.0), which puts the keycaps into the HUD for the button hints.
+- The projectile-steering approach — bending `linearVelocity` and letting the engine
+  integrate — is the same one NewProjectiles uses for homing.
 
 Licensed under GPL-3.0.

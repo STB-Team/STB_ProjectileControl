@@ -92,20 +92,7 @@ namespace ProjectileControl
 
 	bool Input::AttackBlocked()
 	{
-		if (_sessionActive.load(std::memory_order_relaxed)) {
-			return true;
-		}
-		if (!_blockAfterRide.load(std::memory_order_relaxed)) {
-			return false;
-		}
-		for (const auto& held : _attackHeld) {
-			if (held.load(std::memory_order_relaxed)) {
-				return true;
-			}
-		}
-		// Everything is up: the next press is a fresh one and belongs to the game.
-		_blockAfterRide.store(false, std::memory_order_relaxed);
-		return false;
+		return _sessionActive.load(std::memory_order_relaxed) || _blockAfterRide.load(std::memory_order_relaxed);
 	}
 
 	void Input::EndSession()
@@ -166,6 +153,14 @@ namespace ProjectileControl
 
 					if (const int attack = AttackIndex(device, code); attack >= 0) {
 						_attackHeld[attack].store(button->IsPressed(), std::memory_order_relaxed);
+						// Между отпусканием и следующим нажатием обработчик игры может
+						// не вызываться. Снимаем блокировку здесь, пока все кнопки отпущены.
+						if (!button->IsPressed() && _blockAfterRide.load(std::memory_order_relaxed) &&
+							std::ranges::none_of(_attackHeld, [](const auto& a_held) {
+								return a_held.load(std::memory_order_relaxed);
+							})) {
+							_blockAfterRide.store(false, std::memory_order_relaxed);
+						}
 					}
 
 					// IsDown is the press edge only (held time still zero), so holding the key

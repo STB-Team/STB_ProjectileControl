@@ -36,7 +36,7 @@ endif()
 
 set(Boost_USE_STATIC_RUNTIME OFF CACHE BOOL "")
 set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>" CACHE STRING "")
-set(STB_PROJECTILECONTROL_VERSION "1.0.0" CACHE STRING "Project version override")
+set(STB_PROJECTILECONTROL_VERSION "1.0.1" CACHE STRING "Project version override")
 
 # ---- Project ----
 

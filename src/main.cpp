@@ -52,7 +52,8 @@ extern "C" DLLEXPORT bool SKSEAPI SKSEPlugin_Query(const SKSE::QueryInterface* a
 extern "C" DLLEXPORT constinit auto SKSEPlugin_Version = []() {
 	SKSE::PluginVersionData v;
 
-	v.PluginVersion(1);
+	v.PluginVersion(REL::Version{ static_cast<std::uint16_t>(Version::MAJOR), static_cast<std::uint16_t>(Version::MINOR),
+		static_cast<std::uint16_t>(Version::PATCH) });
 	v.PluginName("STB_ProjectileControl");
 	v.AuthorName("STB");
 

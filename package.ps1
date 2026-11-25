@@ -25,6 +25,11 @@ if (Test-Path -LiteralPath $stage) { Remove-Item -LiteralPath $stage -Recurse -F
 New-Item -ItemType Directory -Path (Join-Path $stage 'SKSE/Plugins') -Force | Out-Null
 
 Copy-Item -LiteralPath $dll -Destination (Join-Path $stage 'SKSE/Plugins')
+# The PDB too, as in 1.0: crash loggers name the function and line with it.
+$pdb = [IO.Path]::ChangeExtension($dll, '.pdb')
+if (Test-Path -LiteralPath $pdb) {
+    Copy-Item -LiteralPath $pdb -Destination (Join-Path $stage 'SKSE/Plugins')
+}
 Copy-Item -Path (Join-Path $root 'dist/SKSE/Plugins/*.ini') -Destination (Join-Path $stage 'SKSE/Plugins')
 
 # Strings for the HUD hint. No keycap art ships with the mod: the hint borrows whatever

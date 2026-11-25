@@ -30,7 +30,8 @@ Skyrim VR is not supported.
    - **- / +** — slower or faster slow motion, one step per press; the new value is kept
    - keep holding **W** past the vertical and the arrow flies a full loop, the camera
      turning upside down with it (`bAllowLoops`)
-4. The ride ends on impact.
+4. The ride ends on impact. Opening the Tween Menu also ends the ride before
+   the menu takes over the camera.
 
 The arrow keeps its normal drop while you fly it. Set `fGravityScale = 0` in the INI to
 make it hold whatever line you put it on.
@@ -92,8 +93,10 @@ every build (`STB_PROJECTILECONTROL_DEPLOY_DIR`).
 
 ## Credits
 
-The projectile-steering
-approach — bending `linearVelocity` and letting the engine integrate — is the same one
-NewProjectiles uses for homing.
+- [JerryYOJ](https://github.com/JerryYOJ/Dynamic-Inventory-Icon-Injector-SKSE) for
+  Dynamic Inventory Icon Injector: the runtime SWF import code in `src/swfhelper/`
+  (GPL-3.0), which puts the keycaps into the HUD for the button hints.
+- The projectile-steering approach — bending `linearVelocity` and letting the engine
+  integrate — is the same one NewProjectiles uses for homing.
 
 Licensed under GPL-3.0.

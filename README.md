@@ -30,7 +30,8 @@ Skyrim VR is not supported.
    - **- / +** — slower or faster slow motion, one step per press; the new value is kept
    - keep holding **W** past the vertical and the arrow flies a full loop, the camera
      turning upside down with it (`bAllowLoops`)
-4. The ride ends on impact.
+4. The ride ends on impact. Opening the Tween Menu also ends the ride before
+   the menu takes over the camera.
 
 The arrow keeps its normal drop while you fly it. Set `fGravityScale = 0` in the INI to
 make it hold whatever line you put it on.

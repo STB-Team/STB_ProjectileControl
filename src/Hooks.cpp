@@ -120,17 +120,47 @@ namespace ProjectileControl
 		// fighting off in the control mask, which stops the attack itself -- but the handler
 		// still took the presses in and remembered them: holding a mouse button to steer
 		// drew the bow or charged the spell, and it went off the moment control came back.
-		// Refusing it the input altogether, for the ride and until every attack button is
-		// up again, means nothing is remembered.
+		// Refusing it the presses, for the ride and until every attack button is up again,
+		// means nothing is remembered.
+		//
+		// Releases always go through. The handler keeps state that only a release clears:
+		// heldLeft/heldRight, and ignoreUP -- set when a dual attack (both attack buttons,
+		// on a gamepad LT to aim plus RT to shoot) comes up, and cleared only by the other
+		// button's release. Swallowing that release during the ride left the handler
+		// ignoring every attack input afterwards: the "can't use bow after controlling the
+		// arrow" report from a gamepad player (AttackBlockHandler::ProcessButton, SE vtable
+		// 263058 slot 4). A release starts nothing, so it is safe to pass.
 		struct AttackCanProcess
 		{
 			static bool thunk(RE::PlayerInputHandler* a_this, RE::InputEvent* a_event)
 			{
-				return Input::AttackBlocked() ? false : func(a_this, a_event);
+				if (Input::AttackBlocked()) {
+					const auto* button = a_event ? a_event->AsButtonEvent() : nullptr;
+					if (!button || button->IsPressed()) {
+						return false;
+					}
+				}
+				return func(a_this, a_event);
 			}
 
 			static inline REL::Relocation<decltype(thunk)> func;
 			static constexpr std::size_t                   idx = 0x01;
+		};
+
+		struct TweenMenuProcessMessage
+		{
+			static RE::UI_MESSAGE_RESULTS thunk(RE::TweenMenu* a_this, RE::UIMessage& a_message)
+			{
+				// Ванильный kShow кладет текущую камеру в стек возврата меню.
+				// Сначала снимаем камеру снаряда, чтобы меню сохранило вид игрока.
+				if (a_message.type == RE::UI_MESSAGE_TYPE::kShow && Session::IsActive()) {
+					Session::Stop("tween menu"sv);
+				}
+				return func(a_this, a_message);
+			}
+
+			static inline REL::Relocation<decltype(thunk)> func;
+			static constexpr std::size_t                   idx = 0x04;
 		};
 
 		// ---- PlayerCharacter ----------------------------------------------------------
@@ -166,8 +196,9 @@ namespace ProjectileControl
 		WriteVFunc<GetTranslation, RE::VTABLE_FreeCameraState>();
 		WriteVFunc<PlayerUpdate, RE::VTABLE_PlayerCharacter>();
 		WriteVFunc<AttackCanProcess, RE::VTABLE_AttackBlockHandler>();
+		WriteVFunc<TweenMenuProcessMessage, RE::VTABLE_TweenMenu>();
 
 		logger::info(
-			"hooks installed (arrow + missile update/gravity, free camera rotation/translation, player update, attack input)");
+			"hooks installed (arrow + missile update/gravity, free camera rotation/translation, player update, attack input, tween menu)");
 	}
 }
